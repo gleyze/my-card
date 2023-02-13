@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="Description" content="Put your description here.">
+  <base href="/">
+
+  <style>
+     .btn{
+  padding: 5px;
+  margin: 5px; 
+  border: 5px solid pink;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.btn:hover{
+  background-color: pink;
+}
+
+.btn:focus {
+  background-color: hotpink; 
+}
+
+.all{
+  border-style: dotted;
+  border-width: 10px;
+  border-color: pink;
+  width: 500px;
+  max-width: 600px;
+  margin: auto;
+  background-color: skyblue;
+}
+
+.title{
+  text-align: center;
+  font-size: 40px;
+}
+
+.header{
+  text-align: center;
+}
+.paragraph{
+   text-align: center;
+}
+img {
+  width: 400px;
+}
+
+p {
+  text-align: center; 
+  font-size: 20px;
+  padding: 15px;
+  color: red;
+}
+
+.detailButton {
+  padding: 5px;
+  margin: 5px; 
+  border: 5px solid pink;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline; 
+}
+
+  @media (min-width: 500px) and (max-width: 800px) {
+    
+    .detailButton {
+      display: none;
+    }
+  }
+
+@media (max-width: 500px) {
+  .all{
+    transform: scale(0.8);
+  }
+}
+
+
+  </style>
+  <title>my-card</title>
+
+</head>
+
+<body>
+  <my-card></my-card>
+
+  <script type="module" src="./src/my-card.js"></script>
+
+
+<button id="duplicateBtn" class="btn">Duplicate</button>
+
+<button id="changeBGColorBtn" class = "btn">Change Background Color</button>
+
+<button id="changeTitleBtn" class = "btn">Change title</button>
+
+<button id="deleteBtn" class = "btn">Delete</button>
+
+<section class="all">
+<header class ="header">
+  <h1 id = "mainTitle" class="title">Shiny Fuecoco!!!:)</h1>
+  </header>
+<section class="paragraph">
+  <img src = "https://www.serebii.net/Shiny/SV/new/909.png" width=300px>
+    
+  <p>
+This is shiny Fuecoco. A low shiny quality Fuecoco. Fuecoco best boy. Fuecoco head empty. Fuecoco is a bipedal crocodilian Pokémon with a mostly red body and a white stomach and face. Its body contains a small flame sac, which constantly leaks fire energy due to its size. Fuecoco is laid-back and does things at its own pace. It enjoys eating, and it will rush towards any food it sees.
+  </p>
+
+    <button id = "detailBtn" class="detailButton">Detail</button>
+    </a>
+   </section>
+  
+</section>
+
+</body>
+
+</html>
